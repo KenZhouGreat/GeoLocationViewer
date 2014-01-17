@@ -21,6 +21,8 @@
 		32DB63E11889065300E3F4E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DB63C31889065300E3F4E6 /* UIKit.framework */; };
 		32DB63E91889065300E3F4E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32DB63E71889065300E3F4E6 /* InfoPlist.strings */; };
 		32DB63EB1889065300E3F4E6 /* GeoLocationViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB63EA1889065300E3F4E6 /* GeoLocationViewerTests.m */; };
+		32DB63F91889081400E3F4E6 /* GeolocationAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB63F81889081400E3F4E6 /* GeolocationAttachment.m */; };
+		32DB63FC1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DB63FB1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		32DB63E61889065300E3F4E6 /* GeoLocationViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoLocationViewerTests-Info.plist"; sourceTree = "<group>"; };
 		32DB63E81889065300E3F4E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32DB63EA1889065300E3F4E6 /* GeoLocationViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoLocationViewerTests.m; sourceTree = "<group>"; };
+		32DB63F71889081400E3F4E6 /* GeolocationAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolocationAttachment.h; sourceTree = "<group>"; };
+		32DB63F81889081400E3F4E6 /* GeolocationAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolocationAttachment.m; sourceTree = "<group>"; };
+		32DB63FA1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanaryGeolocationAttachmentViewController.h; sourceTree = "<group>"; };
+		32DB63FB1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanaryGeolocationAttachmentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +118,9 @@
 		32DB63C51889065300E3F4E6 /* GeoLocationViewer */ = {
 			isa = PBXGroup;
 			children = (
-				32DB63CE1889065300E3F4E6 /* AppDelegate.h */,
-				32DB63CF1889065300E3F4E6 /* AppDelegate.m */,
+				32DB63F6188907E100E3F4E6 /* View */,
+				32DB63F5188907DA00E3F4E6 /* Controller */,
+				32DB63F4188907CB00E3F4E6 /* Model */,
 				32DB63D11889065300E3F4E6 /* Main.storyboard */,
 				32DB63D41889065300E3F4E6 /* ViewController.h */,
 				32DB63D51889065300E3F4E6 /* ViewController.m */,
@@ -126,6 +133,8 @@
 		32DB63C61889065300E3F4E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				32DB63CE1889065300E3F4E6 /* AppDelegate.h */,
+				32DB63CF1889065300E3F4E6 /* AppDelegate.m */,
 				32DB63C71889065300E3F4E6 /* GeoLocationViewer-Info.plist */,
 				32DB63C81889065300E3F4E6 /* InfoPlist.strings */,
 				32DB63CB1889065300E3F4E6 /* main.m */,
@@ -150,6 +159,31 @@
 				32DB63E71889065300E3F4E6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32DB63F4188907CB00E3F4E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				32DB63F71889081400E3F4E6 /* GeolocationAttachment.h */,
+				32DB63F81889081400E3F4E6 /* GeolocationAttachment.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		32DB63F5188907DA00E3F4E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				32DB63FA1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.h */,
+				32DB63FB1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		32DB63F6188907E100E3F4E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32DB63FC1889083F00E3F4E6 /* CanaryGeolocationAttachmentViewController.m in Sources */,
 				32DB63D61889065300E3F4E6 /* ViewController.m in Sources */,
 				32DB63D01889065300E3F4E6 /* AppDelegate.m in Sources */,
 				32DB63CC1889065300E3F4E6 /* main.m in Sources */,
+				32DB63F91889081400E3F4E6 /* GeolocationAttachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
