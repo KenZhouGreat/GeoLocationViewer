@@ -97,27 +97,27 @@ static NSString *kAddressName = @"Name";
     return self;
 }
 
-- (id)initWithLocationAttachmentCoreData:(LocationAttachmentCoreData *)locationAttachmentCoreData
-{
-    if(self = [super init])
-    {
-        _attachmentID = locationAttachmentCoreData.attachmentID.longLongValue;
-        _locationImageUrl = locationAttachmentCoreData.thumbnailImageURI;
-        _coordinate = CLLocationCoordinate2DMake(locationAttachmentCoreData.latitude.doubleValue, locationAttachmentCoreData.longitude.doubleValue);
-        _throughfare = locationAttachmentCoreData.throughfare;
-        _subthroughfare = locationAttachmentCoreData.subthroughfare;
-        _locality = locationAttachmentCoreData.locality;
-        _sublocality = locationAttachmentCoreData.sublocality;
-        _administrativearea = locationAttachmentCoreData.administrativearea;
-        _subadministrativearea = locationAttachmentCoreData.subadministrativearea;
-        _region = locationAttachmentCoreData.region;
-        _postalcode = locationAttachmentCoreData.postalcode;
-        _isocountrycode = locationAttachmentCoreData.isocountrycode;
-        _country = locationAttachmentCoreData.country;
-    }
-    
-    return self;
-}
+//- (id)initWithLocationAttachmentCoreData:(LocationAttachmentCoreData *)locationAttachmentCoreData
+//{
+//    if(self = [super init])
+//    {
+//        _attachmentID = locationAttachmentCoreData.attachmentID.longLongValue;
+//        _locationImageUrl = locationAttachmentCoreData.thumbnailImageURI;
+//        _coordinate = CLLocationCoordinate2DMake(locationAttachmentCoreData.latitude.doubleValue, locationAttachmentCoreData.longitude.doubleValue);
+//        _throughfare = locationAttachmentCoreData.throughfare;
+//        _subthroughfare = locationAttachmentCoreData.subthroughfare;
+//        _locality = locationAttachmentCoreData.locality;
+//        _sublocality = locationAttachmentCoreData.sublocality;
+//        _administrativearea = locationAttachmentCoreData.administrativearea;
+//        _subadministrativearea = locationAttachmentCoreData.subadministrativearea;
+//        _region = locationAttachmentCoreData.region;
+//        _postalcode = locationAttachmentCoreData.postalcode;
+//        _isocountrycode = locationAttachmentCoreData.isocountrycode;
+//        _country = locationAttachmentCoreData.country;
+//    }
+//    
+//    return self;
+//}
 
 -(void)setCoordinate:(CLLocationCoordinate2D)coordinate
 {

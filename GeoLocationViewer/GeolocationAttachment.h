@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
-#import "LocationAttachmentCoreData.h"
+//#import "LocationAttachmentCoreData.h"
 
 /** This is a Geolocation attachment with location attributres. */
 @interface GeolocationAttachment : NSObject
@@ -40,7 +40,7 @@
 
 - (id)initWithAttributes:(NSDictionary *)attributes;
 
-- (id)initWithLocationAttachmentCoreData:(LocationAttachmentCoreData *)locationAttachmentCoreData;
+//- (id)initWithLocationAttachmentCoreData:(LocationAttachmentCoreData *)locationAttachmentCoreData;
 
 - (NSString *)addressDisplayTextLine1;
 
